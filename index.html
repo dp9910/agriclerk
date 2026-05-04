@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriClerk — AI-Powered Farm Compliance</title>
+  <meta name="description" content="The AI agent that replaces your compliance specialist — at a fraction of the cost.">
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Section 1 — Hero -->
+  <section class="hero">
+    <div class="container">
+      <img src="logo.png" alt="AgriClerk logo" class="hero-logo">
+      <h1>AgriClerk does your farm's compliance.<br>You focus on the farm.</h1>
+      <p class="subheadline">The AI agent handle everything — at a fraction of the cost.</p>
+      <a href="mailto:contact@agriclerk.com?subject=Early%20Access%20Request" class="btn">Request early access</a>
+    </div>
+  </section>
+
+  <!-- Section 2 — The problem -->
+  <section class="problem">
+    <div class="container">
+      <div class="stat-cards">
+        <div class="stat-card">
+          <span class="stat-number">6+</span>
+          <span class="stat-label">federal agencies</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">48</span>
+          <span class="stat-label">state registrations</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">9</span>
+          <span class="stat-label">months minimum wait</span>
+        </div>
+      </div>
+      <p class="section-line">That's a lot for anyone.</p>
+    </div>
+  </section>
+
+  <!-- Section 3 — The cost of doing nothing -->
+  <section class="cost">
+    <div class="container">
+      <p class="cost-line">Compliance officers cost <strong>$78,420 per year</strong>.</p>
+      <p class="cost-line">Agricultural compliance costs have risen <strong>1,366%</strong> since 2006.</p>
+      <p class="source">BLS Occupational Outlook Handbook 2024 &middot; Hamilton &amp; McCullough, Cal Poly SLO 2025</p>
+    </div>
+  </section>
+
+  <!-- Section 4 — What AgriClerk does -->
+  <section class="how-it-works">
+    <div class="container">
+      <span class="section-label">How it works</span>
+      <p class="section-description">Lab result arrives. AgriClerk reads it, cross-references the regulation, identifies
+        the gap, and files the correct form. You get an alert only if a decision needs you.</p>
+      <div class="steps">
+        <div class="step">
+          <h3>Read the result</h3>
+          <p>Analyses every lab result against the applicable threshold.</p>
+        </div>
+        <div class="step">
+          <h3>Find who you need</h3>
+          <p>Routes to the right lab, specialist, or agency automatically.</p>
+        </div>
+        <div class="step">
+          <h3>Record everything</h3>
+          <p>Builds an unbroken audit trail across every batch and filing.</p>
+        </div>
+        <div class="step">
+          <h3>File it automatically</h3>
+          <p>Generates and submits the correct form to the correct agency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5 — Why now -->
+  <section class="why-now">
+    <div class="container">
+      <p class="why-now-line">AI can now read unstructured regulatory documents and act on them.</p>
+      <p class="why-now-line muted">This was not possible in 2022.</p>
+    </div>
+  </section>
+
+  <!-- Section 6 — The numbers -->
+  <section class="numbers">
+    <div class="container">
+      <div class="number-cards">
+        <div class="number-card">
+          <span class="number-value">$21,136</span>
+          <span class="number-desc">what FSMA compliance costs a small farm per year. For one rule.</span>
+        </div>
+        <div class="number-card">
+          <span class="number-value">$2,400</span>
+          <span class="number-desc">what AgriClerk costs per year.</span>
+        </div>
+      </div>
+      <p class="source">USDA ERS Economic Information Bulletin No. 195</p>
+    </div>
+  </section>
+
+  <!-- Section 7 — Who it's for -->
+  <section class="who">
+    <div class="container">
+      <p class="who-line">Built for livestock operations, CAFOs, and any farm navigating FDA, EPA, or USDA
+        certification.</p>
+    </div>
+  </section>
+
+  <!-- Section 8 — CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to stop doing paperwork?</h2>
+      <a href="mailto:contact@agriclerk.com?subject=Early%20Access%20Request" class="btn">Request early access</a>
+      <p class="cta-contact">Or email us directly: <a href="mailto:contact@agriclerk.com">contact@agriclerk.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 AgriClerk &middot; <a href="mailto:contact@agriclerk.com">contact@agriclerk.com</a> &middot;
+        agriclerk.com</p>
+      <p>Built in Texas.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Subtle fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section, footer').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+
+</html>
