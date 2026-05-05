@@ -1,5 +1,10 @@
 .DS_Store
+node_modules/
+.next/
 logo/
 site_text/
 slide_Decks/
 pitch_documents/
+website/
+agriclerk_insights_report.html
+agriclerk_insights_report.md
